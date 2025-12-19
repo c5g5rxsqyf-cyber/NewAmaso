@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security | AMASO</title>
+    <meta name="robots" content="index,follow" />
+    <style>
+      :root {
+        --bg: #050505;
+        --card: rgba(255, 255, 255, 0.04);
+        --border: rgba(255, 255, 255, 0.08);
+        --text: #e5e7eb;
+        --muted: #94a3b8;
+        --link: #c4b5fd;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        background: radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.12), transparent 45%),
+          radial-gradient(circle at 70% 10%, rgba(99, 102, 241, 0.12), transparent 45%),
+          var(--bg);
+        color: var(--text);
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        line-height: 1.6;
+      }
+      .topline {
+        height: 3px;
+        background: linear-gradient(90deg, #6366f1, #a855f7, #ec4899);
+        position: sticky;
+        top: 0;
+        z-index: 5;
+      }
+      .wrap {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 28px 16px 70px;
+      }
+      header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 16px;
+        margin-top: 10px;
+      }
+      .brand a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 900;
+        letter-spacing: 0.5px;
+      }
+      .nav a {
+        color: var(--muted);
+        text-decoration: none;
+        margin-left: 14px;
+        font-size: 14px;
+      }
+      .nav a:hover {
+        color: #fff;
+      }
+      .card {
+        margin-top: 18px;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 22px;
+        backdrop-filter: blur(8px);
+      }
+      h1 {
+        margin: 0 0 6px;
+        font-size: 32px;
+        line-height: 1.2;
+      }
+      h2 {
+        margin: 22px 0 8px;
+        font-size: 18px;
+      }
+      p,
+      li {
+        color: var(--muted);
+      }
+      a {
+        color: var(--link);
+      }
+      footer {
+        margin-top: 18px;
+        color: #6b7280;
+        font-size: 12px;
+      }
+      ul {
+        margin: 8px 0 0 18px;
+      }
+      .badge {
+        display: inline-block;
+        padding: 6px 10px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.03);
+        color: #cbd5e1;
+        font-size: 12px;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topline"></div>
+    <div class="wrap">
+      <header>
+        <div class="brand"><a href="/">AMASO</a></div>
+        <div class="nav">
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+          <a href="/">Back to site</a>
+        </div>
+      </header>
+
+      <div class="card">
+        <h1 style="margin-top:10px;">Security Practices</h1>
+        <p><strong style="color:#e5e7eb">Last updated:</strong> <span id="updated-date"></span></p>
+
+        <p>
+          We take security seriously. This page describes high-level measures we use to help protect the AMASO website
+          and communications. If you believe you’ve found a vulnerability, please email
+          <a href="mailto:info@amaso.nl">info@amaso.nl</a>.
+        </p>
+
+        <h2>1) Website security</h2>
+        <ul>
+          <li>HTTPS/TLS (when configured) to encrypt traffic in transit.</li>
+          <li>Least-privilege access for servers and administration.</li>
+          <li>Regular dependency updates and vulnerability monitoring.</li>
+          <li>Basic anti-abuse protections for web forms (e.g., spam controls).</li>
+        </ul>
+
+        <h2>2) Data handling</h2>
+        <ul>
+          <li>We only request the information we need to respond to you.</li>
+          <li>We limit retention and restrict access to submitted messages.</li>
+          <li>We use reputable email/hosting providers where applicable.</li>
+        </ul>
+
+        <h2>3) Reporting a vulnerability</h2>
+        <p>
+          Please include a clear description, steps to reproduce, and any supporting material. Do not include sensitive
+          personal data beyond what is necessary.
+        </p>
+
+        <h2>4) Responsible disclosure</h2>
+        <p>
+          We ask that you avoid privacy violations, disruption, and data destruction. We will work with you to
+          understand and address reported issues.
+        </p>
+
+        <h2>5) Contact</h2>
+        <p>Email: <a href="mailto:info@amaso.nl">info@amaso.nl</a></p>
+      </div>
+
+      <footer>
+        <div>© <span id="year"></span> AMASO. All rights reserved.</div>
+      </footer>
+    </div>
+    <script>
+      const now = new Date();
+      document.getElementById('year').textContent = now.getFullYear();
+      document.getElementById('updated-date').textContent = now.toISOString().slice(0, 10);
+    </script>
+  </body>
+</html>

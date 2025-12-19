@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 
 const AutomationScale = () => {
     return (
-        <section style={{ padding: '100px 20px', background: '#050505', position: 'relative', overflow: 'hidden' }}>
+        <section style={{ padding: '100px 20px', position: 'relative', overflow: 'hidden' }}>
             {/* Background Gradient */}
             <div style={{
                 position: 'absolute',

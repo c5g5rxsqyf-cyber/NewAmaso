@@ -42,7 +42,7 @@ const steps = [
 
 const Roadmap = () => {
     return (
-        <section style={{ padding: '120px 20px', background: '#050505', position: 'relative', overflow: 'hidden' }}>
+        <section style={{ padding: '120px 20px', position: 'relative', overflow: 'hidden' }}>
             {/* Background Glow */}
             <div style={{
                 position: 'absolute',

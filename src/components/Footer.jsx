@@ -4,7 +4,7 @@ import { Twitter, Linkedin, Github, Mail } from 'lucide-react';
 const Footer = () => {
     return (
         <footer style={{
-            background: '#020202',
+            background: 'rgba(2,2,2,0.85)',
             padding: '80px 20px 40px',
             borderTop: '1px solid rgba(255,255,255,0.05)'
         }}>
@@ -46,9 +46,9 @@ const Footer = () => {
                     <div>
                         <h4 style={{ color: '#fff', marginBottom: '20px', fontWeight: '600' }}>Legal</h4>
                         <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                            <li><a href="#" style={{ color: '#94a3b8', textDecoration: 'none' }}>Privacy Policy</a></li>
-                            <li><a href="#" style={{ color: '#94a3b8', textDecoration: 'none' }}>Terms of Service</a></li>
-                            <li><a href="#" style={{ color: '#94a3b8', textDecoration: 'none' }}>Security</a></li>
+                            <li><a href="/privacy.html" style={{ color: '#94a3b8', textDecoration: 'none' }}>Privacy Policy</a></li>
+                            <li><a href="/terms.html" style={{ color: '#94a3b8', textDecoration: 'none' }}>Terms of Service</a></li>
+                            <li><a href="/security.html" style={{ color: '#94a3b8', textDecoration: 'none' }}>Security</a></li>
                         </ul>
                     </div>
 

@@ -41,7 +41,7 @@ const features = [
 
 const Features = () => {
     return (
-        <section style={{ padding: '100px 20px', background: '#050505' }}>
+        <section style={{ padding: '100px 20px' }}>
             <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

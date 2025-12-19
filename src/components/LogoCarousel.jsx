@@ -31,9 +31,9 @@ const LogoCarousel = () => {
     return (
         <section style={{
             padding: '60px 0',
-            background: '#050505',
             overflow: 'hidden',
-            borderBottom: '1px solid rgba(255,255,255,0.05)'
+            borderBottom: '1px solid rgba(255,255,255,0.05)',
+            position: 'relative'
         }}>
             <div style={{ textAlign: 'center', marginBottom: '40px' }}>
                 <p style={{ color: '#64748b', fontSize: '0.9rem', letterSpacing: '2px', textTransform: 'uppercase' }}>
@@ -48,7 +48,7 @@ const LogoCarousel = () => {
                     top: 0,
                     bottom: 0,
                     width: '100px',
-                    background: 'linear-gradient(to right, #050505, transparent)',
+                    background: 'linear-gradient(to right, rgba(5,5,5,0.95), transparent)',
                     zIndex: 2
                 }} />
                 <div style={{
@@ -57,7 +57,7 @@ const LogoCarousel = () => {
                     top: 0,
                     bottom: 0,
                     width: '100px',
-                    background: 'linear-gradient(to left, #050505, transparent)',
+                    background: 'linear-gradient(to left, rgba(5,5,5,0.95), transparent)',
                     zIndex: 2
                 }} />
 

@@ -30,7 +30,7 @@ const stats = [
 
 const Testimonials = () => {
     return (
-        <section style={{ padding: '100px 20px', background: '#0a0a0a', position: 'relative' }}>
+        <section style={{ padding: '100px 20px', position: 'relative' }}>
             <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
 
                 {/* Stats Section */}
